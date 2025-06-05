@@ -6,13 +6,20 @@
     <title>JS Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body >
     <table border="1">
         <tr>
             <td colspan="4">
                 <input type="text" id="inputBox" value="0">
-            </td>
-        </tr>
+            
+        
+          <tr>
+    <td class="operatorButton" onclick="operatorBtnPressed('%')">%</td>
+    <td class="operatorButton" onclick="operatorBtnPressed('sqrt')">√</td>
+    <td class="operatorButton" onclick="operatorBtnPressed('cbrt')">∛</td>
+    <td class="operatorButton" onclick="operatorBtnPressed('squared')"> x²</td>
+</tr>
+
         <tr>
             <td  class="digitButton"  onclick="digitBtnPressed(7)">7</td>
             <td class="digitButton" onclick="digitBtnPressed(8)">8</td>
@@ -35,14 +42,12 @@
         </tr>
 
         <tr>
-            <td class="digitButton"  colspan="2" onclick="digitBtnPressed(0)">0</td>
+            <td class="digitButton"  colspan="1" onclick="digitBtnPressed(0)">0</td>
             <td class="ACButton" onclick="btnACPressed()">AC</td>
             <td class="operatorButton"  onclick="operatorBtnPressed('/')">/</td>
+            <td class="operatorButton" onclick="equalBtnPressed('=')">=</td>
         </tr>
 
-        <tr>
-            <td class="operatorButton" colspan="4" onclick="equalBtnPressed('=')">=</td>
-        </tr>
     </table>
     <script src="script.js"></script>
 </body>

@@ -45,10 +45,35 @@ function equalBtnPressed(){
         case "*":
             finalTotal = value1 * value2;
             break;  
+            case "*":
+            finalTotal = value1 * value2;
+            break;
+        case "%":
+            // Percentage of value1 (e.g., 50 % 10 = 5)
+            finalTotal = value1 * (value2 / 100);
+            break;
+        case "sqrt":
+            // Square root of value1
+            finalTotal = Math.sqrt(value1);
+            break;
+        case "cbrt":
+            // Cube root of value1
+            finalTotal = Math.cbrt(value1);
+            break;
+        case "squared":
+            // Square of value1
+            finalTotal = value1 * value1;
+            break;
+            default:
+                finalTotal = value2
+    }
+    inputBox.value = finalTotal;
+    value1 = 0;
+    newLine = true;
 
     }
      document.getElementById("inputBox").value = finalTotal;
      value1 = 0;
         newLine = true;
 
-}
+
