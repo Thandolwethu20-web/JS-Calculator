@@ -4,6 +4,7 @@ table{
     font: normal 3em Arial, sans-serif;
     border-radius: 20px;
     background-color:rgba(84, 90, 145, 0.841);
+    width: 100%;
 
 }
 
@@ -16,7 +17,8 @@ tr{
     background-color: antiquewhite;
     width: 25vw;
     border-radius: 20px;
-    border: black solid 6px;
+    border: black solid 6px ;
+    text-align: center;
 }
 
 #inputBox{
